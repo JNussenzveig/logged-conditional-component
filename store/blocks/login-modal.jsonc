@@ -26,16 +26,6 @@
       "text": "LOGIN"
     }
   },
-  "rich-text#logged": {
-    "props": {
-      "text": "logged"
-    }
-  },
-  "rich-text#not-logged": {
-    "props": {
-      "text": "not-logged"
-    }
-  },
   "login#custom-login": {
     "props": {
       "logInButtonBehavior": "link",

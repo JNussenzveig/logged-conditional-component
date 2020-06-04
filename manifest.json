@@ -1,7 +1,7 @@
 {
   "vendor": "codeby",
-  "name": "sandbox",
-  "version": "0.1.222",
+  "name": "logged-conditional",
+  "version": "0.1.0",
   "builders": {
     "styles": "2.x",
     "store": "0.x",
