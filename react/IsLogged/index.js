@@ -4,6 +4,8 @@ import { ExtensionPoint } from 'vtex.render-runtime'
 
 import axios from 'axios'
 
+import classnames from './style.css'
+
 const IsLogged = () => {
 
   const [user, setUser] = useState(null)
@@ -30,10 +32,14 @@ const IsLogged = () => {
     fetchUser()
   }, [])
 
-  if (!user) return <ExtensionPoint id="IsLogged.not-logged" authState={false} />
+  if (!user) return (
+    <div className={`${classnames.loggedConditionalContainer} ${classnames.loggedConditionalContainer}--logged-out`}>
+      <ExtensionPoint id="IsLogged.not-logged" authState={false} />
+    </div>
+  )
   
   return (
-    <div>
+    <div className={`${classnames.loggedConditionalContainer} ${classnames.loggedConditionalContainer}--logged-in`}>
       <ExtensionPoint id="IsLogged.logged" authState={true} />
     </div>
   );
