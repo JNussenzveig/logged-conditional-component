@@ -33,13 +33,13 @@ const IsLogged = () => {
   }, [])
 
   if (!user) return (
-    <div className={`${classnames.loggedConditionalContainer} ${classnames.loggedConditionalContainer}--logged-out`}>
+    <div className={`${classnames.container} ${classnames.container}--logged-out`}>
       <ExtensionPoint id="IsLogged.not-logged" authState={false} />
     </div>
   )
   
   return (
-    <div className={`${classnames.loggedConditionalContainer} ${classnames.loggedConditionalContainer}--logged-in`}>
+    <div className={`${classnames.container} ${classnames.container}--logged-in`}>
       <ExtensionPoint id="IsLogged.logged" authState={true} />
     </div>
   );

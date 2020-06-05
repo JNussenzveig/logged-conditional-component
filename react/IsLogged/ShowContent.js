@@ -8,7 +8,7 @@ const ShowContent = ({
   console.log("showing content for", authState);
   
   return (
-    <div className='w-100'>
+    <div className={`${classnames.content}`}>
       {children}
     </div>
   );
