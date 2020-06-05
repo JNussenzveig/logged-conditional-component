@@ -11,6 +11,10 @@
   "scripts": {
     "postreleasy": "vtex publish --verbose"
   },
+  "billingOptions": {
+    "free": true,
+    "termsURL": "https://codeby.com.br/terms"
+  },
   "dependencies": {
     "vtex.store": "2.x",
     "vtex.store-header": "2.x",
