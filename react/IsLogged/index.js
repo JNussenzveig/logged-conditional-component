@@ -9,6 +9,7 @@ import classnames from '../styles.css'
 const IsLogged = () => {
 
   const [user, setUser] = useState(null)
+  const [uid, setUid] = useState('')
 
   const fetchUser = async () => {
     const session = (await axios({
@@ -24,6 +25,7 @@ const IsLogged = () => {
 
     if (isLogged) {
       setUser(profile)
+      setUid(profile.email)
     }
   }
 
@@ -43,7 +45,7 @@ const IsLogged = () => {
       body.classList.remove('vtex-logged-in')
       body.classList.add('vtex-logged-out')
     }
-  }, [user])
+  }, [uid])
 
   if (!user) return (
     <div className={`${classnames.container} ${classnames.container}--logged-out`}>
