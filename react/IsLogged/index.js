@@ -35,6 +35,7 @@ const IsLogged = () => {
   }, [])
 
   useLayoutEffect(() => {
+    console.log("layout effect");
     const body = document.querySelector('body')
     if (body) {
       if (user) {
