@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useLayoutEffect } from 'react'
 
 import { ExtensionPoint } from 'vtex.render-runtime'
 
