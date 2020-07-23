@@ -1,0 +1,18 @@
+{
+  "IsLogged": {
+    "component": "IsLogged",
+    "composition": "blocks",
+    "allowed": [
+      "IsLogged.logged",
+      "IsLogged.not-logged"
+    ]
+  },
+  "IsLogged.logged": {
+    "component": "ShowContent",
+    "composition": "children"
+  },
+  "IsLogged.not-logged": {
+    "component": "ShowContent",
+    "composition": "children"
+  }
+}
