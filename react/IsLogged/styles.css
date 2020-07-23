@@ -1,8 +1,0 @@
-.container {}
-.content {}
-
-:global(.vtex-modal-layout-0-x-closeButton) {
-  display: none !important;
-  opacity: 0 !important;
-  visibility: hidden !important;
-}

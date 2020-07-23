@@ -1,0 +1,16 @@
+.container {}
+.content {}
+
+:global(.vtex-modal-layout-0-x-closeButton) {
+  display: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+}
+
+:global(.vtex-login-2-x-content--recoveryPassword) {
+  z-index: 9999999;
+}
+
+:global(.vtex-modal-layout-0-x-paperScrollContent) :global(.vtex-login-2-x-content--accountOptions) {
+  display: none !important;
+}

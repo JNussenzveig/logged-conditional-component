@@ -4,7 +4,7 @@ import { ExtensionPoint } from 'vtex.render-runtime'
 
 import axios from 'axios'
 
-import classnames from './style.css'
+import classnames from '../styles.css'
 
 const IsLogged = () => {
 
@@ -31,6 +31,19 @@ const IsLogged = () => {
     console.log("component mounted");
     fetchUser()
   }, [])
+
+  useLayoutEffect(() => {
+    const body = document.querySelector('body')
+    if (body) {
+      if (user) {
+        body.classList.add('vtex-logged-in')
+        body.classList.remove('vtex-logged-out')
+      }
+
+      body.classList.remove('vtex-logged-in')
+      body.classList.add('vtex-logged-out')
+    }
+  }, [user])
 
   if (!user) return (
     <div className={`${classnames.container} ${classnames.container}--logged-out`}>
