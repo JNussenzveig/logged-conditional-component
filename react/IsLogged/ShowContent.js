@@ -1,4 +1,5 @@
 import React from 'react'
+import classnames from './styles.css'
 
 const ShowContent = ({
   children,
