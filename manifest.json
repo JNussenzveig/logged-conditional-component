@@ -1,7 +1,7 @@
 {
   "vendor": "storeido",
   "name": "logged-conditional",
-  "version": "1.0.6",
+  "version": "1.0.66",
   "builders": {
     "styles": "2.x",
     "store": "0.x",
