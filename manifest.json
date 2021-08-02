@@ -1,7 +1,7 @@
 {
-  "vendor": "codeby",
+  "vendor": "storeido",
   "name": "logged-conditional",
-  "version": "1.0.13",
+  "version": "0.0.1",
   "builders": {
     "styles": "2.x",
     "store": "0.x",
@@ -13,7 +13,7 @@
   },
   "billingOptions": {
     "free": true,
-    "termsURL": "https://codeby.com.br/terms"
+    "termsURL": "https://ido.it/terms"
   },
   "dependencies": {
     "vtex.store": "2.x",
