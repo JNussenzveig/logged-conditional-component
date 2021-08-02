@@ -11,10 +11,6 @@
   "scripts": {
     "postreleasy": "vtex publish --verbose"
   },
-  "billingOptions": {
-    "free": true,
-    "termsURL": "https://ido.it/terms"
-  },
   "dependencies": {
     "vtex.store": "2.x",
     "vtex.store-header": "2.x",
